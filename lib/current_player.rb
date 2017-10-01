@@ -1,3 +1,5 @@
+
+
 def turn_count
   counter = 0
   board.each do |position|
@@ -10,6 +12,10 @@ counter
 end
 
 def current_player(board)
-  !turn_count(board).even? ? "X" : "O"
+  turns = turn_count(board)
+   if turns % 2 == 0
+     "X"
+   else
+     "O"
   end
 end
