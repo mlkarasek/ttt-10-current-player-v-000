@@ -1,8 +1,10 @@
 def turn_count
-  positions = 0
-  while positons < 9
-    positions += 1
+  counter = 0
+  board.each do |i|
+    if i == "X" || i == "O"
+      counter += 1
 end
+end 
 
 def current_player
 
